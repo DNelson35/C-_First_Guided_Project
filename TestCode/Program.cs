@@ -24,16 +24,44 @@
 // }
 
 // Switch statement
-string fruit = "apple";
+// string fruit = "apple";
 
-switch(fruit){
-    case "apple":
-    Console.WriteLine(fruit);
-    break;
-    case "banana":
-    Console.WriteLine(fruit);
-    break;
-    default:
-    Console.WriteLine("not a valid fruit");
-    break;
+// switch(fruit){
+//     case "apple":
+//     Console.WriteLine(fruit);
+//     break;
+//     case "banana":
+//     Console.WriteLine(fruit);
+//     break;
+//     default:
+//     Console.WriteLine("not a valid fruit");
+//     break;
+// }
+
+// for loops in c#
+
+// for(int i = 0; i < 10; i++){
+//     Console.WriteLine(i);
+// }
+
+// while loops
+// int i = 0;
+// while( i < 5){
+//     Console.WriteLine("hey");
+//     i++;
+// }
+
+// FizzBuzz
+
+for(int i = 1; i < 100; i++){
+    if((i % 3 == 0) && (i % 5 == 0)){
+        Console.WriteLine($"{i} - FizzBuzz");
+    }else if(i % 3 == 0){
+        Console.WriteLine($"{i} - Fizz");
+    }else if(i % 5 == 0){
+        Console.WriteLine($"{i} - Buzz");
+    } else{
+        Console.WriteLine($"{i}");
+    }
 }
+
