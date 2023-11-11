@@ -1,0 +1,14 @@
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/GuidedProject/Final/bin/Debug/net7.0/Final
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/GuidedProject/Final/bin/Debug/net7.0/Final.deps.json
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/GuidedProject/Final/bin/Debug/net7.0/Final.runtimeconfig.json
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/GuidedProject/Final/bin/Debug/net7.0/Final.dll
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/GuidedProject/Final/bin/Debug/net7.0/Final.pdb
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/GuidedProject/Final/obj/Debug/net7.0/Final.GeneratedMSBuildEditorConfig.editorconfig
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/GuidedProject/Final/obj/Debug/net7.0/Final.AssemblyInfoInputs.cache
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/GuidedProject/Final/obj/Debug/net7.0/Final.AssemblyInfo.cs
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/GuidedProject/Final/obj/Debug/net7.0/Final.csproj.CoreCompileInputs.cache
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/GuidedProject/Final/obj/Debug/net7.0/Final.dll
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/GuidedProject/Final/obj/Debug/net7.0/refint/Final.dll
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/GuidedProject/Final/obj/Debug/net7.0/Final.pdb
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/GuidedProject/Final/obj/Debug/net7.0/Final.genruntimeconfig.cache
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/GuidedProject/Final/obj/Debug/net7.0/ref/Final.dll
