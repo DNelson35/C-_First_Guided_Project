@@ -53,15 +53,41 @@
 
 // FizzBuzz
 
-for(int i = 1; i < 100; i++){
-    if((i % 3 == 0) && (i % 5 == 0)){
-        Console.WriteLine($"{i} - FizzBuzz");
-    }else if(i % 3 == 0){
-        Console.WriteLine($"{i} - Fizz");
-    }else if(i % 5 == 0){
-        Console.WriteLine($"{i} - Buzz");
-    } else{
-        Console.WriteLine($"{i}");
-    }
-}
+// for(int i = 1; i < 100; i++){
+//     if((i % 3 == 0) && (i % 5 == 0)){
+//         Console.WriteLine($"{i} - FizzBuzz");
+//     }else if(i % 3 == 0){
+//         Console.WriteLine($"{i} - Fizz");
+//     }else if(i % 5 == 0){
+//         Console.WriteLine($"{i} - Buzz");
+//     } else{
+//         Console.WriteLine($"{i}");
+//     }
+// }
+//  Little console game
+using System.Security;
+Random rand = new Random();
+int health = 10;
+int playerHealth = 10;
+int attack = rand.Next(1, 11);
+int monsterAttack = rand.Next(1, 11);
 
+do{
+    if(playerHealth > 0){
+        health -= attack;
+    }
+    Console.WriteLine($"Player did {attack} damage");
+    Console.WriteLine($"Monster health {health}");
+    if(health > 0){
+        playerHealth -= monsterAttack;
+        Console.WriteLine($"Monster did {monsterAttack} damage");
+        Console.WriteLine($"Player health {playerHealth}");
+    }
+   string winner = playerHealth <= 0? "Moster Wins" : health <= 0? "player Wins": "";
+   
+    if(winner != ""){
+        Console.WriteLine($"{winner}");
+    }
+    attack = rand.Next(1, 11);
+    monsterAttack = rand.Next(1, 11);
+}while(health > 0 && playerHealth > 0 );
