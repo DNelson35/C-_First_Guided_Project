@@ -65,29 +65,51 @@
 //     }
 // }
 //  Little console game
-using System.Security;
-Random rand = new Random();
-int health = 10;
-int playerHealth = 10;
-int attack = rand.Next(1, 11);
-int monsterAttack = rand.Next(1, 11);
+// using System.Security;
+// Random rand = new Random();
+// int health = 10;
+// int playerHealth = 10;
+// int attack = rand.Next(1, 11);
+// int monsterAttack = rand.Next(1, 11);
 
-do{
-    if(playerHealth > 0){
-        health -= attack;
-    }
-    Console.WriteLine($"Player did {attack} damage");
-    Console.WriteLine($"Monster health {health}");
-    if(health > 0){
-        playerHealth -= monsterAttack;
-        Console.WriteLine($"Monster did {monsterAttack} damage");
-        Console.WriteLine($"Player health {playerHealth}");
-    }
-   string winner = playerHealth <= 0? "Moster Wins" : health <= 0? "player Wins": "";
+// do{
+//     if(playerHealth > 0){
+//         health -= attack;
+//     }
+//     Console.WriteLine($"Player did {attack} damage");
+//     Console.WriteLine($"Monster health {health}");
+//     if(health > 0){
+//         playerHealth -= monsterAttack;
+//         Console.WriteLine($"Monster did {monsterAttack} damage");
+//         Console.WriteLine($"Player health {playerHealth}");
+//     }
+//    string winner = playerHealth <= 0? "Moster Wins" : health <= 0? "player Wins": "";
    
-    if(winner != ""){
-        Console.WriteLine($"{winner}");
-    }
-    attack = rand.Next(1, 11);
-    monsterAttack = rand.Next(1, 11);
-}while(health > 0 && playerHealth > 0 );
+//     if(winner != ""){
+//         Console.WriteLine($"{winner}");
+//     }
+//     attack = rand.Next(1, 11);
+//     monsterAttack = rand.Next(1, 11);
+// }while(health > 0 && playerHealth > 0 );
+
+// string? readResult;
+
+// bool validEntry = false;
+
+// Console.WriteLine("Enter a string containing at least three characters:");
+
+// do {
+//     readResult = Console.ReadLine();
+//     if(readResult != null){
+//         if(readResult.Length >= 3){
+//             validEntry = true;
+//         } else {
+//             Console.WriteLine("Please enter a valid entry must be no more or less than 3 characters");
+//         }
+//     }
+// }while(validEntry == false);
+
+// int numericValue = 0;
+// bool validNumber = false;
+
+// validNumber = int.TryParse(readResult, out numericValue);
