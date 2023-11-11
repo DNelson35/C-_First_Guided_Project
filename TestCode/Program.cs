@@ -113,3 +113,14 @@
 // bool validNumber = false;
 
 // validNumber = int.TryParse(readResult, out numericValue);
+
+// dict 
+Dictionary<string, int[]> students = new Dictionary<string, int[]>();
+
+students.Add("Sam", new int[] {90, 30, 40});
+students.Add("Timmy", new int[] {20, 100, 100, 100});
+
+foreach (KeyValuePair<string, int[]> pair in students)
+{
+    Console.WriteLine($"Student: {pair.Key}, Grades: {string.Join(", ", pair.Value)}");
+}
