@@ -1,0 +1,14 @@
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/TestCode/bin/Debug/net7.0/TestCode
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/TestCode/bin/Debug/net7.0/TestCode.deps.json
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/TestCode/bin/Debug/net7.0/TestCode.runtimeconfig.json
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/TestCode/bin/Debug/net7.0/TestCode.dll
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/TestCode/bin/Debug/net7.0/TestCode.pdb
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/TestCode/obj/Debug/net7.0/TestCode.GeneratedMSBuildEditorConfig.editorconfig
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/TestCode/obj/Debug/net7.0/TestCode.AssemblyInfoInputs.cache
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/TestCode/obj/Debug/net7.0/TestCode.AssemblyInfo.cs
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/TestCode/obj/Debug/net7.0/TestCode.csproj.CoreCompileInputs.cache
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/TestCode/obj/Debug/net7.0/TestCode.dll
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/TestCode/obj/Debug/net7.0/refint/TestCode.dll
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/TestCode/obj/Debug/net7.0/TestCode.pdb
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/TestCode/obj/Debug/net7.0/TestCode.genruntimeconfig.cache
+/Users/damiennelson/Development/fun-stuff/c_sharp_practice/Guided-project-foreach-if-array-CSharp-main/TestCode/obj/Debug/net7.0/ref/TestCode.dll
