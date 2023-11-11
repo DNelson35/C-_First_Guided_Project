@@ -115,12 +115,58 @@
 // validNumber = int.TryParse(readResult, out numericValue);
 
 // dict 
-Dictionary<string, int[]> students = new Dictionary<string, int[]>();
+// Dictionary<string, int[]> students = new Dictionary<string, int[]>();
 
-students.Add("Sam", new int[] {90, 30, 40});
-students.Add("Timmy", new int[] {20, 100, 100, 100});
+// students.Add("Sam", new int[] {90, 30, 40});
+// students.Add("Timmy", new int[] {20, 100, 100, 100});
 
-foreach (KeyValuePair<string, int[]> pair in students)
-{
-    Console.WriteLine($"Student: {pair.Key}, Grades: {string.Join(", ", pair.Value)}");
+// foreach (KeyValuePair<string, int[]> pair in students)
+// {
+//     Console.WriteLine($"Student: {pair.Key}, Grades: {string.Join(", ", pair.Value)}");
+// }
+
+// safe convert string to int
+// string value = "102";
+// int result = 0;
+// if (int.TryParse(value, out result))
+// {
+//     Console.WriteLine($"Measurement: {result}");
+// }
+// else
+// {
+//     Console.WriteLine("Unable to report the measurement.");
+// }
+
+// array methods
+
+string[] pallets = {"B14", "A11", "B12", "A13" };
+
+Console.WriteLine("Sorted...");
+
+// Array.Sort(pallets);
+// to reverse order sort then reverse
+// Array.Reverse(pallets);
+Array.Clear(pallets, 0, 2);
+
+foreach(string pallet in pallets) {
+    Console.WriteLine($"-- {pallet}");
 }
+
+Array.Resize(ref pallets, 6);
+
+pallets[4] = "C01";
+pallets[5] = "C02";
+
+foreach (var pallet in pallets)
+{
+    Console.WriteLine($"-- {pallet}");
+}
+
+// reverse a string using char array
+
+string value = "abc123";
+char[] valueArray = value.ToCharArray();
+Array.Reverse(valueArray);
+string result = new string(valueArray);
+
+Console.WriteLine(result);
