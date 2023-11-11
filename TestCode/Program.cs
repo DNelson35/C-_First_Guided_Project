@@ -139,34 +139,68 @@
 
 // array methods
 
-string[] pallets = {"B14", "A11", "B12", "A13" };
+// string[] pallets = {"B14", "A11", "B12", "A13" };
 
-Console.WriteLine("Sorted...");
+// Console.WriteLine("Sorted...");
 
-// Array.Sort(pallets);
-// to reverse order sort then reverse
-// Array.Reverse(pallets);
-Array.Clear(pallets, 0, 2);
+// // Array.Sort(pallets);
+// // to reverse order sort then reverse
+// // Array.Reverse(pallets);
+// Array.Clear(pallets, 0, 2);
 
-foreach(string pallet in pallets) {
-    Console.WriteLine($"-- {pallet}");
-}
+// foreach(string pallet in pallets) {
+//     Console.WriteLine($"-- {pallet}");
+// }
 
-Array.Resize(ref pallets, 6);
+// Array.Resize(ref pallets, 6);
 
-pallets[4] = "C01";
-pallets[5] = "C02";
+// pallets[4] = "C01";
+// pallets[5] = "C02";
 
-foreach (var pallet in pallets)
-{
-    Console.WriteLine($"-- {pallet}");
-}
+// foreach (var pallet in pallets)
+// {
+//     Console.WriteLine($"-- {pallet}");
+// }
 
 // reverse a string using char array
 
-string value = "abc123";
-char[] valueArray = value.ToCharArray();
-Array.Reverse(valueArray);
-string result = new string(valueArray);
+// string value = "abc123";
+// char[] valueArray = value.ToCharArray();
+// Array.Reverse(valueArray);
+// // string result = new string(valueArray);
+// string result = String.Join(",", valueArray);
 
+// Console.WriteLine(result);
+
+// string[] items = result.Split(',');
+
+// foreach(string item in items){
+//     Console.WriteLine($"-- {item}");
+// }
+
+// Reverse each word in a string modifying 
+string pangram = "The quick brown fox jumps over the lazy dog";
+
+string[] stringArr = pangram.Split(' ');
+
+for(int i = 0; i < stringArr.Length; i++){
+   char[] wordArr = stringArr[i].ToCharArray();
+   Array.Reverse(wordArr);
+   stringArr[i] = new String(wordArr);
+}
+string reveredwordString = String.Join(" ", stringArr);
+Console.WriteLine(reveredwordString);
+
+// reverse each word none modifying;
+string[] message = pangram.Split(' ');
+string[] newMessage = new string[message.Length];
+
+for (int i = 0; i < message.Length; i++)
+{
+    char[] letters = message[i].ToCharArray();
+    Array.Reverse(letters);
+    newMessage[i] = new string(letters);
+}
+
+string result = String.Join(" ", newMessage);
 Console.WriteLine(result);
