@@ -84,7 +84,7 @@
 //         Console.WriteLine($"Player health {playerHealth}");
 //     }
 //    string winner = playerHealth <= 0? "Moster Wins" : health <= 0? "player Wins": "";
-   
+
 //     if(winner != ""){
 //         Console.WriteLine($"{winner}");
 //     }
@@ -179,28 +179,94 @@
 // }
 
 // Reverse each word in a string modifying 
-string pangram = "The quick brown fox jumps over the lazy dog";
+// string pangram = "The quick brown fox jumps over the lazy dog";
 
-string[] stringArr = pangram.Split(' ');
+// string[] stringArr = pangram.Split(' ');
 
-for(int i = 0; i < stringArr.Length; i++){
-   char[] wordArr = stringArr[i].ToCharArray();
-   Array.Reverse(wordArr);
-   stringArr[i] = new String(wordArr);
+// for(int i = 0; i < stringArr.Length; i++){
+//    char[] wordArr = stringArr[i].ToCharArray();
+//    Array.Reverse(wordArr);
+//    stringArr[i] = new String(wordArr);
+// }
+// string reveredwordString = String.Join(" ", stringArr);
+// Console.WriteLine(reveredwordString);
+
+// // reverse each word none modifying;
+// string[] message = pangram.Split(' ');
+// string[] newMessage = new string[message.Length];
+
+// for (int i = 0; i < message.Length; i++)
+// {
+//     char[] letters = message[i].ToCharArray();
+//     Array.Reverse(letters);
+//     newMessage[i] = new string(letters);
+// }
+
+// string result = String.Join(" ", newMessage);
+// Console.WriteLine(result);
+
+//  string input = "Pad this";
+//  string padBoth = input.PadLeft(10, '-').PadRight(15, '-');
+//  Console.WriteLine(padBoth);
+
+// loading animation in console
+// char[] animation = { '|', '/', '-', '\\' };
+
+// for (int i = 0; i < 20; i++)
+// {
+//    foreach (char c in animation)
+//    {
+//        Console.Write("\r" + c);
+//        Thread.Sleep(100);
+//    }
+// }
+
+// void randomeNumbers(){
+//     Random rand = new Random();
+//     for(int i = 0; i < 4; i++){
+//         int num = rand.Next(1, 100);
+//         Console.Write($"{num} ");
+//     }
+//     Console.WriteLine();
+// }
+
+// randomeNumbers();
+// // for(int i = 0; i < 4; i++){
+// //     randomeNumbers();
+// // }
+
+// guess game
+
+using System.Runtime.CompilerServices;
+
+Random rand = new Random();
+int currentGuess;
+bool playing = true;
+string? userSelected;
+
+Console.WriteLine("Do you want to play a guessing game? (y/n): ");
+userSelected = Console.ReadLine();
+
+if(userSelected != null && userSelected == "y"){
+    Console.WriteLine("lets Play");
+    int computerPick = rand.Next(1, 10);
+    while(playing == true){
+        Console.WriteLine("Pick a number");
+        string? userPick;
+        userPick = Console.ReadLine();
+        if(int.TryParse(userPick, out currentGuess)){
+            userGuess(userPick, computerPick);
+        }
+    }   
+}else{
+    Console.WriteLine("Ok goodbye");
 }
-string reveredwordString = String.Join(" ", stringArr);
-Console.WriteLine(reveredwordString);
 
-// reverse each word none modifying;
-string[] message = pangram.Split(' ');
-string[] newMessage = new string[message.Length];
-
-for (int i = 0; i < message.Length; i++)
-{
-    char[] letters = message[i].ToCharArray();
-    Array.Reverse(letters);
-    newMessage[i] = new string(letters);
+void userGuess(string userPick, int computerPick){
+    if (currentGuess == computerPick){
+        Console.WriteLine($"You Win computer picked {computerPick}");
+        playing = false;
+    } else {
+        Console.WriteLine($"Sorry try again {userPick} is the wrong number");
+    }
 }
-
-string result = String.Join(" ", newMessage);
-Console.WriteLine(result);
