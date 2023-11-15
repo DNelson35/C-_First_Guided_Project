@@ -299,12 +299,21 @@
 // }
 
 // catching exceptions
-int errorVal = 0;
+// int errorVal = 0;
 
-try 
-{
-    decimal number = 3m / errorVal;
-} 
-catch {
-    Console.WriteLine("Error:");
+// try 
+// {
+//     decimal number = 3m / errorVal;
+// } 
+// catch {
+//     Console.WriteLine("Error:");
+// }
+
+using System.Xml.Schema;
+
+int displayNumber(int a, int b){
+     int total = a + b;
+    return total;
 }
+
+Console.WriteLine(displayNumber(1, 5));
